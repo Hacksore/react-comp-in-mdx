@@ -1,5 +1,7 @@
 ---
 import Test from "../content/test.mdx";
+
+import { Hello } from "../comps/react/test.js"
 ---
 
 <html lang="en">
@@ -14,5 +16,8 @@ import Test from "../content/test.mdx";
 		<h1>React Component in Astro MDX</h1>
 		<p>Clicking the button yields no interactivity</p>
 		<Test />
+
+		<h2>react</h2>
+		<Hello client:load />
 	</body>
 </html>
